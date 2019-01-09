@@ -51,6 +51,23 @@ Support for linting is provided via [luacheck](https://github.com/mpeterv/luache
 
 Once installed, `luacheck` support can be activated by assigning the `lua.luacheckPath` setting to the path of the `luacheck` executable. Additionally, since `luacheck` provides vastly more detailed and contextually aware errors that may sometimes duplicate those created by `luaparse`, the setting `lua.preferLuaCheckErrors` can be set to `true` to suppress `luaparse` errors.
 
+
+## Building
+
+```
+npm install gulp-cli -g
+npm install
+cd server
+npm install
+gulp
+
+# cd to project root
+cd out/server
+npm insatll --only=dev
+
+# then in VSCode, F5
+```
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
